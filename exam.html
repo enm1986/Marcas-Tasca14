@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/js.js"></script>
+    <title>TASCA14: Formulario auto-corregido</title>
+    
+
+  </head>
+
+  <body>
+    <header>
+      <img id="logo" src="images/logo.jpg" alt="UMeMeIB">
+      <h1>Prueba de acceso a estudios de Memelogía</h1>
+    </header>
+    <form id="formulario"> 
+      <ol id="preguntas">
+        <li class="pregunta">
+          <h3>Pregunta nº1</h3>
+          <p>¿En qué formatos podemos encontrar <i>memes</i> en Internet?</p>
+          <ul>
+            <li><label><input type="checkbox" name="P1" value="o1">Vídeo</label></li>
+            <li><label><input type="checkbox" name="P1" value="o2">Webcomic</label></li>
+            <li><label><input type="checkbox" name="P1" value="o3">Podcast</label></li>
+            <li><label><input type="checkbox" name="P1" value="o4">Imagen</label></li>
+            <li><label><input type="checkbox" name="P1" value="o5">Ninguna de las anteriores</label></li>
+          </ul>
+        </li>
+        <li class="pregunta">
+          <h3>Pregunta nº2</h3>
+          <p>¿Cuáles de las siguientes características definen a un <i>meme</i> en Internet?</p>
+          <ul>
+            <li><label><input type="checkbox" name="P2" value="o1">Espontaneidad</label></li>
+            <li><label><input type="checkbox" name="P2" value="o2">Difusión</label></li>
+            <li><label><input type="checkbox" name="P2" value="o3">Evolución</label></li>
+            <li><label><input type="checkbox" name="P2" value="o4">Marketing</label></li>
+            <li><label><input type="checkbox" name="P2" value="o5">Ninguna de las anteriores</label></li>
+          </ul>
+        </li>
+        <li class="pregunta">
+            <h3>Pregunta nº3</h3>
+            <p>¿Cuáles de los siguientes conceptos pueden considerarse como <b>tipos</b> de <i>memes</i>?</p>
+            <ul>
+              <li><label><input type="checkbox" name="P3" value="o1">Reacciones</label></li>
+              <li><label><input type="checkbox" name="P3" value="o2">Consejos animales</label></li>
+              <li><label><input type="checkbox" name="P3" value="o3">Vídeos virales</label></li>
+              <li><label><input type="checkbox" name="P3" value="o4">Frases hechas</label></li>
+              <li><label><input type="checkbox" name="P3" value="o5">Ninguna de las anteriores</label></li>
+            </ul>
+          </li>
+        <li class="pregunta">
+          <h3>Pregunta nº4</h3>
+          <p>¿Cuáles de las siguientes canciones han sido usadas como <i>memes</i> por las comunidades de Internet?</p>
+          <select name="P4" size="5" multiple style="display:table;">
+            <option>Never Gonna Give You Up - Rick Astley</option>
+            <option>Baby - Justin Bieber</option>
+            <option>Harlem Shake - Baauer</option>
+            <option>Bon Appétit♡S - Blend A</option>
+            <option>For the Damaged Coda - Blonde Redhead</option>
+          </select>
+        </li>
+        <li class="pregunta">
+          <h3>Pregunta nº5</h3>
+          <p>Identifica el nombre de los siguientes <i>memes</i> (elige una opción de la lista).</p>
+          <span>
+            <img class=imgtest src="images/p05a.jpg" alt="p05a_image">
+            <input type="text" list="lista" name="P5a">
+          </span>
+          <span>
+            <img class=imgtest src="images/p05b.jpg" alt="p05b_image">
+            <input type="text" list="lista" name="P5b">
+          </span>
+          <span>          
+            <img class=imgtest src="images/p05c.jpg" alt="p05c_image">
+            <input type="text" list="lista" name="P5c">
+          </span>
+          <span>
+            <img class=imgtest src="images/p05d.jpg" alt="p05d_image">
+            <input type="text" list="lista" name="P5d">
+          </span>
+          <datalist id="lista">
+            <option>Bad Luck Brian</option>
+            <option>Good Guy Greg</option>
+            <option>Scumbag Steve</option>
+            <option>Doge</option>
+            <option>Angry Cat</option>
+            <option>Grumpy Cat</option>
+            <option>Nyan Cat</option>
+            <option>Advice Dog</option>
+          </datalist>
+        </li> 
+        <li class="pregunta">
+          <h3>Pregunta nº6</h3>
+          <p>Indica el tema que representa cada <i>meme</i>.</p>
+          <span>
+            <img class=imgtest src="images/p06a.jpg" alt="p06a_image">
+            <select name="P6a">
+              <option class="opcion">(elige una opción)</option>
+              <option>Consternación y/o exasperación</option>
+              <option>Problemas del primer mundo</option>
+              <option>Miedo y/o inseguridad</option>
+            </select>
+          </span>
+          <span>
+            <img class=imgtest src="images/p06b.jpg" alt="p06b_image">
+            <select name="P6b">
+              <option class="opcion">(elige una opción)</option>
+              <option>Cosas interesantes de la vida</option>
+              <option>Tranquilidad y/o seguridad</option>
+              <option>Incomodidad y/o supresión de dolor</option>
+            </select>
+          </span>
+          <span>
+            <img class=imgtest src="images/p06c.jpg" alt="p06c_image">
+            <select name="P6c">
+              <option class="opcion">(elige una opción)</option>
+              <option>Tener vergüenza ajena</option>
+              <option>Tener dolor de cabeza</option>
+              <option>Frustración y/o incredulidad</option>
+            </select>
+          </span>
+        </li>
+        <li class="pregunta">
+          <h3>Pregunta nº7</h3>
+          <p>Diseña un <i>meme</i> de <i>"Novio distraido"</i> en la siguiente plantilla:</p>
+          <div id="p07">
+            <img src="images/p07.jpg" alt="p07_image">
+            <input id="p07a" type="text" name="P7a" placeholder="Yo" maxlength="20">
+            <input id="p07b" type="text" name="P7b" placeholder="HTML+CSS" maxlength="20">
+            <input id="p07c" type="text" name="P7c" placeholder="Bootstrap" maxlength="20">
+          </div>  
+        </li>
+        <li class="pregunta">
+          <h3>Pregunta nº8</h3>
+          <p>Indica cuál de los siguientes <i>memes</i> <b>NO</b> es de <i>rage comics</i>.</p>
+          <ul>
+            <li><label><input type="radio" name="P8" value="derpina">Derpina</label></li>
+            <li><label><input type="radio" name="P8" value="trollface">Trollface</label></li>
+            <li><label><input type="radio" name="P8" value="cerealguy">Cereal Guy</label></li>
+            <li><label><input type="radio" name="P8" value="lolcat">LOL Cat</label></li>
+            <li><label><input type="radio" name="P8" value="yaoming">Yao Ming</label></li>
+          </ul>
+        </li>
+        <li class="pregunta">
+          <h3>Pregunta nº9</h3>
+          <p>Contesta las preguntas que corresponden al <i>meme</i> de <i>rage comics</i> que aparece a continuación:</p>
+          <img id="p09img" src="images/p09.jpg" alt="p09_image">
+          <p>¿Cómo se llama?</p>
+          <ul>
+            <li><label><input type="radio" name="P9a" value="inglip">Inglip</label></li>
+            <li><label><input type="radio" name="P9a" value="gropaga">Gropaga</label></li>
+            <li><label><input type="radio" name="P9a" value="raisins">Raisins</label></li>
+          </ul>
+          <p>¿De quién recibe órdenes?</p>
+          <ul>
+            <li><label><input type="radio" name="P9b" value="inglip">Inglip</label></li>
+            <li><label><input type="radio" name="P9b" value="gropaga">Gropaga</label></li>
+            <li><label><input type="radio" name="P9b" value="raisins">Raisins</label></li>
+          </ul>         
+          <p>¿Cómo recibe dichas órdenes?</p>
+          <ul>
+            <li><label><input type="radio" name="P9c" value="email">A través de E-mail</label></li>
+            <li><label><input type="radio" name="P9c" value="tablon">A través de un tablón de imágenes de Internet</label></li>
+            <li><label><input type="radio" name="P9c" value="captcha">A través de Captchas</label></li>
+          </ul> 
+        </li>
+        <li class="pregunta">
+          <h3>Pregunta nº10</h3>
+          <p>¿Quién acuñó el término <i>meme</i>?</p>
+          <ul>
+            <li><label><input type="radio" name="P10" value="NH">Nicholas Humphrey en 1983</label></li>
+            <li><label><input type="radio" name="P10" value="RD">Richard Dawkins en 1976</label></li>
+            <li><label><input type="radio" name="P10" value="MG">Mike Godwin en 1993</label></li>
+            <li><label><input type="radio" name="P10" value="none">Ninguno de los anteriores</label></li>
+          </ul>
+        </li>
+      </ol>
+      <p id="botones"><input type="submit" value="Finalizar examen"></p>
+    </form>
+
+    <!-- 
+      <label>Your favorite color <input type="color" name="favorite"></label>
+      <label><input type="text" name="P6" maxlength="20"></label>
+    -->
+        
+    <div id='resultadosDiv'></div>
+  </body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/js.js"></script>
+  <title>TASCA11: Formulario</title>
+
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="images/logo.jpg" alt="UMeMeIB">
+    <h1>Prueba de acceso a estudios de Memelogía</h1>
+  </header>
+  <section id="introduccion">
+    <h3>Instrucciones</h3>
+    <ul>
+      <li>La prueba se puntúa sobre 10 puntos.</li>
+      <li>Cada pregunta contestada correctamente en su totalidad sumará 1 punto.</li>
+      <li>Cada respuesta incorrecta restará 2/3 del valor de la respuesta.</li>
+      <li>Si una pregunta consta de varios apartados/respuestas, cada apartado/respuesta se puntuará de forma
+        independiente.</li>
+      <li>Las 4 primeras preguntas pueden tener múltiples respuestas.</li>
+    </ul>
+  </section>
+  <form action="index.html" name="datos">
+    <ol id="formulario">
+      <li class="pregunta" id="datos">
+        <h3>Datos personales</h3>
+        <label>Nombre:<br><input type="text" name="nombre" maxlength="100" required></label>
+        <label>Apellidos:<br><input type="text" name="apellidos" maxlength="100" required></label>
+        <label>NIF:<br><input type="text" name="nif" maxlength="9" style="width:120px" required></label>
+        <label>E-mail:<br><input type="email" name="email" maxlength="100" required></label>
+      </li>
+      <p id="botones">
+        <input type="submit" value="Empezar Examen" onclick="confirmar()">
+        <input type="reset" value="Borrar datos">
+      </p>
+  </form>
+</body>
+
+</html>

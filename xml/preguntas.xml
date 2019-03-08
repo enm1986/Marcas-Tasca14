@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE preguntas>
+
+<preguntas>
+    <pregunta id="P1">
+	<type>checkbox</type>
+	<title>¿En qué formatos podemos encontrar memes en Internet?</title>
+	<option>Vídeo<</option>
+    <option>Webcomic</option>
+	<option>Podcast</option>
+    <option>Imagen</option>
+	<option>Ninguna de las anteriores</option>
+	<answer>0</answer>
+	<answer>1</answer>
+	<answer>3</answer>
+    </pregunta>
+
+    <pregunta id="P2">
+	<type>checkbox</type>
+	<title>¿Cuáles de las siguientes características definen a un meme en Internet?</title>
+	<option>Espontaneidad</option>
+    <option>Difusión</option>
+    <option>Evolución</option>
+	<option>Marketing</option>
+	<option>Ninguna de las anteriores</option>
+	<answer>0</answer>
+	<answer>1</answer>
+	<answer>2</answer>
+    </pregunta>
+
+    <pregunta id="P3">
+	<type>checkbox</type>
+	<title>¿Cuáles de los siguientes conceptos pueden considerarse como tipos de memes?</title>
+	<option>Reacciones</option>
+    <option>Consejos animales</option>
+    <option>Vídeos virales</option>
+    <option>Frases hechas</option>
+	<option>Ninguna de las anteriores</option>
+	<answer>0</answer>
+	<answer>1</answer>
+	<answer>2</answer>
+	<answer>3</answer>
+    </pregunta>
+
+    <pregunta id="P4">
+	<type>multiple</type>
+	<title>¿Cuáles de las siguientes canciones han sido usadas como memes por las comunidades de Internet?</title>
+    <option>Never Gonna Give You Up - Rick Astley</option>
+    <option>Baby - Justin Bieber</option>
+    <option>Harlem Shake - Baauer</option>
+    <option>Bon Appétit♡S - Blend A</option>
+    <option>For the Damaged Coda - Blonde Redhead</option>
+	<answer>0</answer>
+	<answer>2</answer>
+	<answer>3</answer>
+    </pregunta>
+
+    <pregunta id="P5a">
+	<type>text</type>
+	<title>p05a_image</title>
+	<answer>Bad Luck Brian</answer>
+    </pregunta>
+
+	<pregunta id="P5b">
+	<type>text</type>
+	<title>p05b_image</title>
+	<answer>Good Guy Greg</answer>
+    </pregunta>
+
+	<pregunta id="P5c">
+	<type>text</type>
+	<title>p05c_image</title>
+	<answer>Doge</answer>
+    </pregunta>
+
+	<pregunta id="P5d">
+	<type>text</type>
+	<title>p05d_image</title>
+	<answer>Grumpy Cat</answer>
+    </pregunta>
+
+    <pregunta id="P6a">
+	<type>select</type>
+	<title>p06a_image</title>
+    <option>(elige una opción)</option>
+    <option>Consternación y/o exasperación</option>
+    <option>Problemas del primer mundo</option>
+    <option>Miedo y/o inseguridad</option>
+	<answer>2</answer>
+    </pregunta>
+
+    <pregunta id="P6b">
+	<type>select</type>
+	<title>p06b_image</title>
+    <option>(elige una opción)</option>
+    <option>Cosas interesantes de la vida</option>
+    <option>Tranquilidad y/o seguridad</option>
+    <option>Incomodidad y/o supresión de dolor</option>
+	<answer>3</answer>
+    </pregunta>
+
+    <pregunta id="P6c">
+	<type>select</type>
+	<title>p06c_image</title>
+    <option>(elige una opción)</option>
+    <option>Tener vergüenza ajena</option>
+    <option>Tener dolor de cabeza</option>
+    <option>Frustración y/o incredulidad</option>
+	<answer>1</answer>
+    </pregunta>
+
+    <pregunta id="P8">
+	<type>radio</type>
+	<title>Indica cuál de los siguientes memes NO es de rage comics</title>
+    <option>Derpina</option>
+    <option>Trollface</option>
+    <option>Cereal Guy</option>
+    <option>LOL Cat</option>
+    <option>Yao Ming</option>
+	<answer>3</answer>
+    </pregunta>
+
+	<pregunta id="P9a">
+	<type>radio</type>
+	<title>¿Cómo se llama?</title>
+    <option>Inglip</option>
+    <option>Gropaga</option>
+    <option>Raisins</option>
+	<answer>2</answer>
+    </pregunta>
+
+	<pregunta id="P9b">
+	<type>radio</type>
+	<title>¿De quién recibe órdenes?</title>
+    <option>Inglip</option>
+    <option>Gropaga</option>
+    <option>Raisins</option>
+	<answer>0</answer>
+    </pregunta>
+
+	<pregunta id="P9c">
+	<type>radio</type>
+	<title>¿Cómo recibe dichas órdenes?</title>
+    <option>A través de E-mail</option>
+    <option>A través de un tablón de imágenes de Internet</option>
+    <option>A través de Captchas</option>
+	<answer>2</answer>
+    </pregunta>
+
+	<pregunta id="P10">
+	<type>radio</type>
+	<title>¿Quién acuñó el término meme?</title>
+    <option>Nicholas Humphrey en 1983</option>
+    <option>Richard Dawkins en 1976</option>
+    <option>Mike Godwin en 1993</option>
+	<option>Ninguno de los anteriores</option>
+	<answer>1</answer>
+    </pregunta>
+	
+</preguntas>
