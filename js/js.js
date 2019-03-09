@@ -2,6 +2,9 @@ var xhttp = new XMLHttpRequest();
 var url = "https://raw.githack.com/enm1986/Marcas-Tasca14/master/xml/preguntas.xml";
 var url2 = "xml/preguntas.xml"
 var xmlDoc = null;
+var duracion = 60 * 1; // 10 minutos
+var time;
+var timer;
 //respuestas correctas
 var p1 = [];
 var p2 = [];
@@ -34,27 +37,24 @@ window.onload = function () {
             gestionarXml(this);
         }
     };
-    xhttp.open("GET", url2, true);
+    xhttp.open("GET", url, true);
     xhttp.send();
+
+    //iniciar temporizador
+
+    time = duracion;
+    timer = setInterval(actualizarTemp, 1000);
 
     //CORREGIR al apretar el botón
     formElement = document.getElementById('formulario');
     formElement.onsubmit = function () {
         inicializar();
         if (comprobar()) {
-            var f = formElement;
-            corregirCheckBox(f.P1, p1, "p1_");
-            corregirCheckBox(f.P2, p2, "p2_");
-            corregirCheckBox(f.P3, p3, "p3_");
-            //corregirCheckBox(f.P4, p4, "p4_");
-            corregirSelectMultiple(f.P4, p4, "p4_");
-            corregirTexto(f.P5, p5, "p5resp");
-            corregirSelect(f.P6, p6, "p6resp");
-            corregirSelect(f.P7, p7, "p7resp");
-            corregirCheckBox(f.P8, p8, "p8_"); //radio
-            corregirCheckBox(f.P9, p9, "p9_"); //radio
-            corregirCheckBox(f.P10, p10, "p10_"); //radio
+            corregirTodo();
             presentarNota();
+            deshabilitarForm();
+            clearInterval(timer);
+            window.scrollTo(0, 0);
         }
         return false;
     }
@@ -111,10 +111,29 @@ function inicializar() {
 }
 
 function presentarNota() {
-    darRespuestaHtml("div_nota", "Nota: " + nota.toPrecision(3) + " puntos sobre 10");
+    darRespuestaHtml("div_nota", "Nota: " + nota.toFixed(2) + " puntos sobre 10");
+}
+
+function deshabilitarForm() {
+    document.getElementById("formulario").setAttribute("disabled", "");
+    document.getElementById("fin").setAttribute("disabled", "");
 }
 
 // Correcciones
+
+function corregirTodo() {
+    var f = formElement;
+    corregirCheckBox(f.P1, p1, "p1_");
+    corregirCheckBox(f.P2, p2, "p2_");
+    corregirCheckBox(f.P3, p3, "p3_");
+    corregirSelectMultiple(f.P4, p4, "p4_");
+    corregirTexto(f.P5, p5, "p5resp");
+    corregirSelect(f.P6, p6, "p6resp");
+    corregirSelect(f.P7, p7, "p7resp");
+    corregirRadio(f.P8, p8, "p8_"); //radio
+    corregirRadio(f.P9, p9, "p9_"); //radio
+    corregirRadio(f.P10, p10, "p10_"); //radio
+}
 
 function corregirTexto(pregunta, respuesta, id) {
     if (pregunta.value == respuesta[0]) {
@@ -122,10 +141,11 @@ function corregirTexto(pregunta, respuesta, id) {
         colorearRespuesta(id, "darkgreen");
         document.getElementById(id).style.color = "lightgreen";
         nota += 1;
-    }
-    else {
-        darRespuestaHtml(id, "Incorrecto");
+    } else {
+        darRespuestaHtml(id, "Incorrecto, la respuesta correcta es:");
+        darRespuestaHtml(id, respuesta[0]);
         colorearRespuesta(id, "red");
+        nota -= 0.5;
     }
 }
 
@@ -135,18 +155,31 @@ function corregirSelect(pregunta, respuesta, id) {
         colorearRespuesta(id, "darkgreen");
         document.getElementById(id).style.color = "lightgreen";
         nota += 1;
-    }
-    else {
-        darRespuestaHtml(id, "Incorrecto");
+    } else {
+        var respString = pregunta.getElementsByTagName("option")[parseInt(respuesta[0]) + 1].innerHTML;
+        darRespuestaHtml(id, "Incorrecto, la respuesta correcta es:");
+        darRespuestaHtml(id, respString);
         colorearRespuesta(id, "red");
+        nota -= 0.5;
     }
 }
 
-
+function corregirRadio(pregunta, respuesta, id) {
+    for (i = 0; i < pregunta.length; i++) {
+        if (pregunta[i].checked) {
+            if (i == respuesta[0]) {
+                nota += 1.0;
+                colorearRespuesta(id + i, "darkgreen");
+            } else {
+                nota -= 0.5;
+                colorearRespuesta(id + i, "red");
+            }
+        }
+    }
+    document.getElementById(id + respuesta[0]).style.color = "lightgreen";
+}
 
 function corregirCheckBox(pregunta, respuestas, id) { //Corrige preguntas de checkbox y radio
-    //Para cada opción mira si está checkeada, si está checkeada mira si es correcta y lo guarda en un array escorrecta[]
-    var f = formElement;
     var escorrecta = [];
     for (i = 0; i < pregunta.length; i++) {  //"P1" es el nombre asignado a todos los checkbox de la pregunta 1
         if (pregunta[i].checked) {
@@ -218,8 +251,6 @@ function darRespuestaHtml(id, texto) {
 
 function colorearRespuesta(id, color) {
     document.getElementById(id).style.backgroundColor = color;
-    document.getElementById(id).style.fontStyle = "italic";
-    //document.getElementById(id).style.color = "black";
 }
 
 //Comprobar que se han introducido datos en el formulario
@@ -258,6 +289,41 @@ function comprobarSelect(pregunta) {
 
 function comprobarText(pregunta) {
     return (pregunta.value != "");
+}
+
+function actualizarTemp() {
+    time--;
+    t = document.getElementById("temp");
+    if (time >= 0) {
+        if (time < 30) {
+            //Rojo
+            t.style.background = "#F21C1C";
+        } else {
+            if (time < 60) {
+                t.style.background = "#D28808";
+            } else {
+                if (time < 120) {
+                    t.style.background = "#A0D208";
+                } else {
+                    t.style.background = "#54AE06";
+                }
+            }
+        }
+        min = parseInt(time / 60, 10);
+        sec = parseInt(time % 60, 10);
+
+        min = min < 10 ? "0" + min : min;
+        sec = sec < 10 ? "0" + sec : sec;
+
+        document.getElementById('crono').innerHTML = min + ":" + sec;
+    } else {
+        alert("¡TIEMPO AGOTADO!")
+        clearInterval(timer);
+        corregirTodo();
+        presentarNota();
+        deshabilitarForm();
+        window.scrollTo(0, 0);
+    }
 }
 
 //funcion para hacer que el select multiple se pueda aplicar sin la tecla Ctrl

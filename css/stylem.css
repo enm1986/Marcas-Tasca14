@@ -1,6 +1,6 @@
 
 html{
-	font-size: 16px;
+	font-size: 18px;
 }
 
 body{
@@ -17,14 +17,10 @@ header{
 	margin-bottom: 20px;
 }
 
-p{
-	font-size: 1em;
-}
-
 #logo{
 	opacity: 0.5;
 	border-radius: 20% 20% 35% 35%;
-	min-width: 200px;
+	width: 220px; 
 }
 
 #introduccion{
@@ -82,12 +78,6 @@ span select, span input{
 	border-radius: 1em;
 }
 
-#imgP9{
-	width: 150px;
-	margin-right: 20px;
-	border-radius: 1em;
-}
-
 .div_resp p{
 	margin: 0;
 	padding-left: 20px;
@@ -99,3 +89,97 @@ span select, span input{
 	margin: auto;
 }
 
+select[multiple] {
+	width: 100%;
+	font-size: 0.9em;
+}
+
+#temp {
+	margin: 0;
+	display: block;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	padding: 5px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Courier New', Courier, monospace;
+	opacity: 0.7;
+	border: solid 2px;
+    border-radius: 5px;
+}
+
+#crono{
+	margin: 0;
+	display: inline;
+}
+
+
+@media screen and (max-width: 550px){
+
+	span select, span input{
+		margin-top: 15%;
+		width: 55%;
+	}
+
+	.imgtest{
+		width: 35%;
+	}
+
+	#temp {
+		bottom: 15px;
+		right: 5px;
+		padding: 3px;
+	}
+}
+
+@media screen and (max-width: 500px){
+
+	header{
+		font-size: 0.9em;
+	}
+
+	body{
+		font-size: 75%;
+	}
+
+	ul{
+		padding-inline-start: 0.4em;
+	}
+	
+	span select, span input{
+		margin-top: 5%;
+		width: 100%;
+	}
+
+	.imgtest{
+		margin: auto;
+		width: 150px;
+	}
+
+	div, span{
+		display: grid;
+	}
+
+	select[multiple] {
+	font-size: 0.83em;
+	}
+
+	#datos label{
+		margin: 10px;
+		font-size: 1.2em;
+	}
+	
+	#datos input{
+		width: 100%;
+		font-size: 1.2em;
+	}
+
+	#temp {
+		bottom: initial;
+		top: 320px;
+		right: 0;
+		font-size: 15px;
+	}
+}

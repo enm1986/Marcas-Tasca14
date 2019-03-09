@@ -6,6 +6,7 @@
   <link rel='stylesheet' media='screen and (min-width: 1065px)' href="css/style.css">
   <link rel='stylesheet' media='screen and (max-width: 1064px)' href="css/stylem.css">
   <script src="js/js.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>TASCA14: Formulario auto-corregido</title>
 </head>
 
@@ -14,6 +15,7 @@
     <img id="logo" src="images/logo.jpg" alt="UMeMeIB">
     <h1>Prueba de acceso a estudios de Memelogía</h1>
   </header>
+  <p id="temp">Tiempo restante: <br><span id="crono"></span> minutos</p>
   <div id="div_nota"></div>
   <form id="formulario">
     <ol id="preguntas">
@@ -94,7 +96,6 @@
         </span>
         <div class="div_resp" id="p6resp"></div>
       </li>
-
       <li class="pregunta">
         <h3>Pregunta nº7</h3>
         <p>Indica el tema que representa este <i>meme</i>.</p>
@@ -109,7 +110,6 @@
         </span>
         <div class="div_resp" id="p7resp"></div>
       </li>
-
       <li class="pregunta">
         <h3>Pregunta nº8</h3>
         <p>Indica cuál de los siguientes <i>memes</i> <b>NO</b> es de <i>rage comics</i>.</p>
@@ -125,7 +125,7 @@
         <h3>Pregunta nº9</h3>
         <p>¿Cómo se llama el <i>meme</i> de <i>rage comics</i> que aparece a continuación:</p>
         <div>
-          <img id="imgP9" src="images/p09.jpg" alt="p09_image">
+          <img class="imgtest" id="imgP9" src="images/p09.jpg" alt="p09_image">
           <ul>
             <li id="p9_0"><label><input type="radio" name="P9" value="inglip">Inglip</label></li>
             <li id="p9_1"><label><input type="radio" name="P9" value="gropaga">Gropaga</label></li>
@@ -144,15 +144,8 @@
         </ul>
       </li>
     </ol>
-    <p id="botones"><input type="submit" value="Finalizar examen"></p>
+    <p id="botones"><input id="fin" type="submit" value="Finalizar examen"></p>
   </form>
-
-  <!-- 
-      <label>Your favorite color <input type="color" name="favorite"></label>
-      <label><input type="text" name="P6" maxlength="20"></label>
-    -->
-
-  <div id='resultadosDiv'></div>
 </body>
 
 </html>
