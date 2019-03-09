@@ -3,10 +3,10 @@
 <!DOCTYPE preguntas>
 
 <preguntas>
-    <pregunta id="P1">
+    <pregunta id="p01">
 	<type>checkbox</type>
-	<title>¿En qué formatos podemos encontrar memes en Internet?</title>
-	<option>Vídeo<</option>
+	<title>En que formatos podemos encontrar memes en Internet</title>
+	<option>Video</option>
     <option>Webcomic</option>
 	<option>Podcast</option>
     <option>Imagen</option>
@@ -16,7 +16,7 @@
 	<answer>3</answer>
     </pregunta>
 
-    <pregunta id="P2">
+    <pregunta id="p02">
 	<type>checkbox</type>
 	<title>¿Cuáles de las siguientes características definen a un meme en Internet?</title>
 	<option>Espontaneidad</option>
@@ -29,7 +29,7 @@
 	<answer>2</answer>
     </pregunta>
 
-    <pregunta id="P3">
+    <pregunta id="p03">
 	<type>checkbox</type>
 	<title>¿Cuáles de los siguientes conceptos pueden considerarse como tipos de memes?</title>
 	<option>Reacciones</option>
@@ -43,7 +43,7 @@
 	<answer>3</answer>
     </pregunta>
 
-    <pregunta id="P4">
+    <pregunta id="p04">
 	<type>multiple</type>
 	<title>¿Cuáles de las siguientes canciones han sido usadas como memes por las comunidades de Internet?</title>
     <option>Never Gonna Give You Up - Rick Astley</option>
@@ -54,63 +54,34 @@
 	<answer>0</answer>
 	<answer>2</answer>
 	<answer>3</answer>
+	<answer>4</answer>
     </pregunta>
 
-    <pregunta id="P5a">
+    <pregunta id="p05">
 	<type>text</type>
 	<title>p05a_image</title>
 	<answer>Bad Luck Brian</answer>
     </pregunta>
 
-	<pregunta id="P5b">
-	<type>text</type>
-	<title>p05b_image</title>
-	<answer>Good Guy Greg</answer>
-    </pregunta>
-
-	<pregunta id="P5c">
-	<type>text</type>
-	<title>p05c_image</title>
-	<answer>Doge</answer>
-    </pregunta>
-
-	<pregunta id="P5d">
-	<type>text</type>
-	<title>p05d_image</title>
-	<answer>Grumpy Cat</answer>
-    </pregunta>
-
-    <pregunta id="P6a">
+    <pregunta id="p06">
 	<type>select</type>
 	<title>p06a_image</title>
-    <option>(elige una opción)</option>
     <option>Consternación y/o exasperación</option>
     <option>Problemas del primer mundo</option>
     <option>Miedo y/o inseguridad</option>
-	<answer>2</answer>
-    </pregunta>
-
-    <pregunta id="P6b">
-	<type>select</type>
-	<title>p06b_image</title>
-    <option>(elige una opción)</option>
-    <option>Cosas interesantes de la vida</option>
-    <option>Tranquilidad y/o seguridad</option>
-    <option>Incomodidad y/o supresión de dolor</option>
-	<answer>3</answer>
-    </pregunta>
-
-    <pregunta id="P6c">
-	<type>select</type>
-	<title>p06c_image</title>
-    <option>(elige una opción)</option>
-    <option>Tener vergüenza ajena</option>
-    <option>Tener dolor de cabeza</option>
-    <option>Frustración y/o incredulidad</option>
 	<answer>1</answer>
     </pregunta>
 
-    <pregunta id="P8">
+	<pregunta id="p07">
+	<type>select</type>
+	<title>p06b_image</title>
+    <option>Cosas interesantes de la vida</option>
+    <option>Tranquilidad y/o seguridad</option>
+    <option>Incomodidad y/o supresión de dolor</option>
+	<answer>2</answer>
+    </pregunta>
+
+    <pregunta id="p08">
 	<type>radio</type>
 	<title>Indica cuál de los siguientes memes NO es de rage comics</title>
     <option>Derpina</option>
@@ -121,34 +92,16 @@
 	<answer>3</answer>
     </pregunta>
 
-	<pregunta id="P9a">
+	<pregunta id="p09">
 	<type>radio</type>
 	<title>¿Cómo se llama?</title>
     <option>Inglip</option>
     <option>Gropaga</option>
     <option>Raisins</option>
-	<answer>2</answer>
+	<answer>1</answer>
     </pregunta>
 
-	<pregunta id="P9b">
-	<type>radio</type>
-	<title>¿De quién recibe órdenes?</title>
-    <option>Inglip</option>
-    <option>Gropaga</option>
-    <option>Raisins</option>
-	<answer>0</answer>
-    </pregunta>
-
-	<pregunta id="P9c">
-	<type>radio</type>
-	<title>¿Cómo recibe dichas órdenes?</title>
-    <option>A través de E-mail</option>
-    <option>A través de un tablón de imágenes de Internet</option>
-    <option>A través de Captchas</option>
-	<answer>2</answer>
-    </pregunta>
-
-	<pregunta id="P10">
+	<pregunta id="p10">
 	<type>radio</type>
 	<title>¿Quién acuñó el término meme?</title>
     <option>Nicholas Humphrey en 1983</option>
