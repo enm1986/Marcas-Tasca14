@@ -145,7 +145,7 @@ select[multiple] {
 	}
 
 	ul{
-		padding-inline-start: 0.4em;
+		padding-left: 0.4em;
 	}
 	
 	span select, span input{
